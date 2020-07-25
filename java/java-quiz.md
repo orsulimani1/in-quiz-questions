@@ -329,9 +329,9 @@ try{
     System.out.println("!")
 }
 '''
-- It will throw a runtime exception
+- It will throw a runtime exception  <<<<---Correct
 - It will not compile
-- Hello World! <<<<---Correct
+- Hello World!
 - Hello World
 
 #### Q28. Which statement is NOT true?
@@ -339,3 +339,116 @@ try{
 - An anonymous class does not require a zero-argument constructor. <<<<---Correct
 - An anonymous class may specify an interface as its base type.
 - An anonymous class may specify both an abstract class and interface as base types
+
+### Q29. what is the output of this code
+public class Main {
+    public static void main(String[] args){
+        List list = new ArrayList();
+        list.add("hello");
+        list.add(2);
+        System.out.println(list.get(0) instanceof Object);
+        System.out.println(list.get(1) instanceof Integer);
+    }
+}
+- the code does not compile
+- falsetrue
+- truetrue  <<<<---Correct
+- falsefalse
+
+### Q30 what can you use to create new instace in java?
+- constructor  <<<<---Correct
+- private method
+- another instance
+- field
+
+### Q31 You have an ArrayList of names that you want to sort alphabetically which approach would NOT work?
+- collections.sort(names)
+- names.stream().sorted((s1, s2)->s1.compareTo(s2)).collect(Collectors.toList())
+- nams.sort(List.DESCENDING) <<<<---Correct
+- names.sort(Comparator.compatinf(String::toString))
+
+### Q32. what is the output of this code
+public class Main {
+    public static void main(String[] args){
+        int a = 123451234512345
+        System.out.println(a);
+    }
+}
+- Nothing -- this will not compile <<<<---Correct
+- "12345100000"
+- a negative interger value
+- "123451234512345"
+
+### Q33. what is the output of this code
+public class Main {
+    public static void main(String[] args){
+        int array[] = {1, 2, 3, 4};
+        for( int i=0; i<array.size(); i++) {
+              System.out.println(arraty[i]);
+        }
+    }
+}
+- it will not compile because of line 4 <<<<---Correct
+- 1234
+- 123
+- it will not compile because of line 3
+
+### Q34.what code would you use to tell if "schwifty" is of type String
+-"schwifty".getClass().getSimpleName() == "String"
+-"schwifty".getType == String"
+-"schwifty" instance of String <<<<---Correct
+-"schwifty".getType().Equals("String")
+
+### Q35 The runtime system starts you progrem by callinf which function first?
+- print
+- iterative
+- main 
+- hello
+
+### Q36. which letter will print when this code is run?
+public static void main(String[] args){
+     try {
+         System.out.println("A");
+         badMethod();
+         System.out.println("B");
+     } catch (Exception ex) {
+         System.out.println("C");
+     } finally {
+         System.out.println("D");
+     }
+}
+public static coid badMethod() {
+   throw new Error();
+}
+- A, B, and, D
+- c and D
+- A and D <<<<---Correct
+- A, C, and D
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println(print(1));
+    }
+     static Exception print(int i){
+     if (i > 0 ) {
+        return new Exception ();
+     } else {
+        throw new RuntimeException();
+     }
+  }
+}
+- it will run and throw an exception
+- it will not compile
+- it will show a stack trace with runtime exception
+- "Java.land.Exception" <<<<---Correct
+
+
+### Q37. Object-oriented programming is style of programminf where you orgnaize you program around ___ rather than ___ and data rather than logic.
+- actions; functions
+- objects; actions <<<<---Correct
+- actions; objects
+- functions; actions
+
+
+
+ 
